@@ -1,4 +1,4 @@
-# 
+# Ursprungslinien
 ## Vorbereitung
 ### 1. Daten von [unhcr](https://www.unhcr.org/refugee-statistics/download/?url=J4giYT) oder direkt als [.csv Datei](https://github.com/s92854/DTM/files/11703394/query_data.zip) herunterladen.
 
@@ -80,8 +80,31 @@ $y
 
 
 
-### 10. Plug In "Shape Tools" installieren
+### 10. Linien erzeugen
+* Plug In "Shape Tools" installieren
+* Vektor --> Shape Tools --> XY to line
 
 <img width="702" alt="image" src="https://github.com/s92854/DTM/assets/134683810/cc87c9c0-02e6-4160-8386-f62a287415ba">
 
+<img width="960" alt="image" src="https://github.com/s92854/DTM/assets/134683810/04bbf33a-4da0-4a0d-927f-0d6f7b2cb718">
 
+Zwischenergebnis sollte in etwa so aussehen:
+
+<img width="522" alt="image" src="https://github.com/s92854/DTM/assets/134683810/f646ad8b-f408-4ca0-a5d6-15572a37adcd">
+
+
+
+### 11. Benutzerkoordinatensystem erstellen
+* Einstellungen --> Benutzerdefiniertes KBS
+* Folgenden Code eingeben:
+```
++proj=ortho +lat_0=49.149 +lon_0=31.229 +x_0=0 +y_0=0 +a=6371000 +b=6371000 +units=m +no_defs
+```
+
+<img width="596" alt="image" src="https://github.com/s92854/DTM/assets/134683810/738b3522-d8ef-4ade-ac27-a36889941af0">
+
+* KBS anwenden
+
+Mit geänderter Hintergrundfarbe sieht das Zwischenergebnis dann so aus:
+
+<img width="354" alt="image" src="https://github.com/s92854/DTM/assets/134683810/af6caea6-88d2-49eb-a6f6-3fd7d7ca789e">
