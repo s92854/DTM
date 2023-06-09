@@ -114,19 +114,20 @@ Mit geänderter Hintergrundfarbe sieht das Zwischenergebnis dann so aus:
 *  Layer erneut speichern als Shapefile
 *  Eigenes KBZ anwenden
 
-### 13.
 
+### 13. Formatierung
+* Einzelsymbol --> Geometriegenerator
+* Symbol des Ukraine Punktes mit folgendem Code erzeugen:
 ```
 buffer(make_point(0,0), 6350000, 20)
 ```
 
 <img width="620" alt="image" src="https://github.com/s92854/DTM/assets/134683810/95df866a-b0e5-48e8-a6e5-6a2320f40b86">
-
-<img width="617" alt="image" src="https://github.com/s92854/DTM/assets/134683810/95daa596-d8f3-4133-b526-e8834d545705">
+&nbsp;
 
 <img width="251" alt="image" src="https://github.com/s92854/DTM/assets/134683810/6373aa3f-f4de-428e-8e42-107ae12b7b87">
 
-
+EDIT THIS
 
 
 <img width="627" alt="image" src="https://github.com/s92854/DTM/assets/134683810/a4c622ec-3177-4264-9c2e-a4d596705282">
