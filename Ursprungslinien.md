@@ -109,6 +109,8 @@ Mit geänderter Hintergrundfarbe sieht das Zwischenergebnis dann so aus:
 
 <img width="354" alt="image" src="https://github.com/s92854/DTM/assets/134683810/af6caea6-88d2-49eb-a6f6-3fd7d7ca789e">
 
+*NOTE*: Dieser rote Punkt ist ein Anzeigefehler oder ein Punkt im Cashe einer temporären Datei, die durch die Verschiebung von Punkten entsteht. Durch einen Neustart des Programms wird dieser entfernt.
+
 
 ### 12. Ukraine Punkt
 *  Layer erneut speichern als Shapefile
@@ -116,6 +118,7 @@ Mit geänderter Hintergrundfarbe sieht das Zwischenergebnis dann so aus:
 
 
 ### 13. Formatierung
+#### Ukraine Punkt
 * Einzelsymbol --> Geometriegenerator
 * Symbol des Ukraine Punktes mit folgendem Code erzeugen:
 ```
@@ -123,19 +126,31 @@ buffer(make_point(0,0), 6350000, 20)
 ```
 
 <img width="620" alt="image" src="https://github.com/s92854/DTM/assets/134683810/95df866a-b0e5-48e8-a6e5-6a2320f40b86">
-&nbsp;
 
-<img width="251" alt="image" src="https://github.com/s92854/DTM/assets/134683810/6373aa3f-f4de-428e-8e42-107ae12b7b87">
-
-EDIT THIS
-
+* Reiter "Einfache Füllung", Shapeburst Füllung wählen und folgende Eigenschaften anwenden:
 
 <img width="627" alt="image" src="https://github.com/s92854/DTM/assets/134683810/a4c622ec-3177-4264-9c2e-a4d596705282">
 
+* Bei Zeicheneffekte ein Häckchen setzen und auf das Symbol rechts daneben klicken
+
+<img width="251" alt="image" src="https://github.com/s92854/DTM/assets/134683810/6373aa3f-f4de-428e-8e42-107ae12b7b87">
+
+
+#### Linien Layer
+
 <img width="618" alt="image" src="https://github.com/s92854/DTM/assets/134683810/e2460c99-ab1a-4117-a461-d33c5994305d">
+
+#### Countries Layer
+* Transparenz in etwa bei 10% für gut sichbare, aber transparente Linien
 
 <img width="626" alt="image" src="https://github.com/s92854/DTM/assets/134683810/d6fce18e-2970-4bb2-bd4c-1a418400867a">
 
+#### Dots Layer
+* Symbolisierung nach Größe
+
 <img width="626" alt="image" src="https://github.com/s92854/DTM/assets/134683810/6179d9d1-0d1c-4d73-875f-39ae460480b6">
+
+* Optional sind noch Beschriftungen für die Länder
+* Am besten auch einen Textpuffer für bessere Lesbarkeit hinzufügen
 
 <img width="626" alt="image" src="https://github.com/s92854/DTM/assets/134683810/924fd014-b3b9-4937-aa20-0f9c63178592">
