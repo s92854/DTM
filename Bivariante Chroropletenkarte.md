@@ -72,7 +72,7 @@ Code schaut, ob BIP über 10.2 ist, wenn ja, dann wird in Gruppe 3 gepackt. Wenn
 ```
 CASE
 WHEN "Freedom to" > 0.852 THEN 'C'
-WHEN "Freedom to" > 0.76 THEN 'B'
+WHEN "Freedom to" <= 0.852 AND "Freedom to" > 0.76 THEN 'B'
 ELSE 'A'
 END
 ```
