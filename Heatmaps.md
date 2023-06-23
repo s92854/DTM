@@ -63,3 +63,20 @@ Filter:
 
 ![image](https://github.com/s92854/DTM/assets/134683810/f63f1d63-8a18-4707-ac45-69ab06cbd55f)
 
+### 5. Attribute nach Position verknüpfen
+* Werkzeug "Attribute nach Position verknüpfen (Zusammenfassen)" und Preis wählen
+* wieder für alle vier durchführen
+
+![image](https://github.com/s92854/DTM/assets/134683810/b633e2a0-c9a4-434e-8158-3ed75b2a28c7)
+
+### 6. Erstellen der Heatmap
+* Zentroid-Layer --> Eigenschaften --> Symbolisierung --> Heatmap --> Farbverlauf
+* Erste Farbe auf Transparent setzen und weitere Punkte durch Doppelklick unter die Farbleiste hinzufügen
+
+![image](https://github.com/s92854/DTM/assets/134683810/8b06c86b-2d6b-4dc5-a78a-9d4a4bf3e5e3)
+
+* Stil Copy-Paste auf die anderen Ebenen
+
+![image](https://github.com/s92854/DTM/assets/134683810/b9d62037-7ebf-460c-a7d4-ce6f2661c54c)
+
+
