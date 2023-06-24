@@ -1,8 +1,11 @@
 # Heatmaps - am Beispiel Singapur
 
 
-## Vorbereitung
-### [listings.csv](https://github.com/s92854/DTM/files/11849362/listings.csv) & [neighbourhoods.geojson](https://github.com/s92854/DTM/files/11849370/neighbourhoods.zip) von [Airbnb](http://insideairbnb.com/get-the-data/) herunterladen.
+## Vorbereitung: Datendownloads
+### 1. [listings.csv](https://github.com/s92854/DTM/files/11849362/listings.csv) & [neighbourhoods.geojson](https://github.com/s92854/DTM/files/11849370/neighbourhoods.zip) von [Airbnb](http://insideairbnb.com/get-the-data/) herunterladen
+### 2. Boundary-[Shapefile](https://github.com/s92854/DTM/files/11857227/singapore.zip) von Singapur von [Stanford EarthWorks](https://earthworks.stanford.edu/catalog/stanford-pg798kr1205) herunterladen
+
+&nbsp;
 
 ## In QGIS
 
@@ -32,6 +35,7 @@ hotel_room
 ```
 
 &nbsp;
+
 Filter:
 ```
 "room_type" = 'Entire home/apt'
@@ -80,3 +84,4 @@ Filter:
 ![image](https://github.com/s92854/DTM/assets/134683810/b9d62037-7ebf-460c-a7d4-ce6f2661c54c)
 
 
+### 7. Singapurs Boundary-Layer hinzufügen und Drucklayout erstellen
