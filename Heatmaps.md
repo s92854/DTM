@@ -22,7 +22,7 @@
 
 Namen:
 ```
-enire_apt
+entire_apt
 ```
 ```
 private_room
