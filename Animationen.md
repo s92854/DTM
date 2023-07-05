@@ -1,10 +1,12 @@
 # Animationen in QGIS - Am Beispiel der Perseiden
 
+## KML Version
+
 ## 1. Daten herunterladen
 * Mit Hilfe der [Meteormap](https://tammojan.github.io/meteormap/) Meteordaten heraussuchen und die entsprechende [.kml Datei](https://github.com/s92854/DTM/files/11958878/meteors_whole_August.zip) herunterladen
 
 ## 2. Daten in QGIS laden
-* Layer --> Layer hinzufügen --> Vektordatenlayer hinzufügen
+* Layer > Layer hinzufügen > Vektordatenlayer hinzufügen
 
 ![image](https://github.com/s92854/DTM/assets/134683810/68f33db2-aaed-434d-8034-84739ccf5c9a)
 
@@ -23,8 +25,8 @@
 
 ![image](https://github.com/s92854/DTM/assets/134683810/890487fe-7187-496f-8730-916ec4097635)
 
-* Rechtsklick auf **meteors** Layer --> Alle Stile kopieren
-* Rechtsklick auf **meteors whole August** Layer --> Alle Stile einfügen
+* Rechtsklick auf **meteors** Layer > Alle Stile kopieren
+* Rechtsklick auf **meteors whole August** Layer > Alle Stile einfügen
 
 ## 4. Zeitliche Animation
 * Eigenschaften von **meteors whole August** --> Zeitlich --> Dynamische Zeitsteuerung
@@ -46,7 +48,7 @@
 ![image](https://github.com/s92854/DTM/assets/134683810/4d97fb27-7c9a-4a30-b5ab-c1725e1faed5)
 
 ## 6. Temporären Layer erstellen
-* Über Layer --> Layer erstellen --> Temporären Layer erstellen (hier Name: legende)
+* Über Layer > Layer erstellen > Temporären Layer erstellen (hier Name: legende)
 
 ![image](https://github.com/s92854/DTM/assets/134683810/e961a435-bf89-4e8f-8b9e-2b4e687f3e79)
 
@@ -55,7 +57,7 @@
 
 ![image](https://github.com/s92854/DTM/assets/134683810/081c7d8b-c143-4f93-9a54-827cc5ba625b)
 
-* Layergestaltung --> Beschriftungen --> Einzelne Beschriftung --> Ausducksdialog
+* Layergestaltung > Beschriftungen > Einzelne Beschriftung > Ausducksdialog
 
 ![image](https://github.com/s92854/DTM/assets/134683810/d65f2286-a62b-46da-ac64-c1b0ceae32a2)
 
@@ -71,7 +73,7 @@ Ausdruck eingeben:
 ![image](https://github.com/s92854/DTM/assets/134683810/6d243785-3e22-4e70-b26d-1aacd5190da9)
 
 ## 8. Schriftanimation
-* Eigenschaften **Legende** Layer --> Zeitlich --> Dynamische Zeitsteuerung
+* Eigenschaften **Legende** Layer > Zeitlich > Dynamische Zeitsteuerung
 * Umstellen auf **Nur Layer neuzeichnen**
 * Layer als Shapedatei exportieren
 
@@ -81,5 +83,49 @@ Ausdruck eingeben:
 ![image](https://github.com/s92854/DTM/assets/134683810/bc36c361-59f6-4b99-8596-2b9c2d4f71ca)
 
 ## 10. Photoshop: Stapelskripting
-* In Photoshop: Datei --> Skripten --> Deien in Stapel laden
-* 
+* In Photoshop: Datei > Skripten > Deien in Stapel laden
+* Alle (29) Bilder der Animation auswählen
+
+![image](https://github.com/s92854/DTM/assets/134683810/10e453c8-c17a-4258-995e-bbfca33d5a9a)
+
+* In QGIS: Neue Variante der Animation erstellen
+  * Warum auch immer werden die Zeicheneffekte nicht mit exportiert
+* In Photoshop: Animationen2 als Batch reinladen
+* Fenster > Zeitleiste einblenden
+* Zeitleiste auf Frame-Animation umstellen
+* Frame-Animation erstellen > 3 Striche > Frames aus Ebenen erstellen
+
+![image](https://github.com/s92854/DTM/assets/134683810/c388ba86-53fb-41b8-bdb0-72a06370cab7)
+
+* Um Animation zu verlangsamen: Alle Frames auswählen > bei einem Pfeil nach unten > gewünschte Anzeigedauer einstellen
+* Für Umkehr der Animation: Drei Striche > Frames umkehren
+
+![image](https://github.com/s92854/DTM/assets/134683810/7e7f0dcb-6313-4ff5-b0bc-10068299a783)
+
+* Export: Datei > Export > Für Web speichern
+
+## Endergebnis
+
+![Animation_slow](https://github.com/s92854/DTM/assets/134683810/479c8b2a-94bc-4060-8cd2-1b7effb3fc52)
+
+&nbsp;
+
+## CSV Version
+
+[//]: # (Timestamp Video: 01:43:00 - ca. 01:46:00)
+[//]: # (--> warum genau die Daten?)
+
+## 1.
+* neues Projekt in QGIS erstellen
+* gerade heruntergeladene [Meteordaten]() als .csv Datei mit Punktgeometrie einfügen
+
+![image](https://github.com/s92854/DTM/assets/134683810/7fa97f44-57e1-4cae-a4f8-76b1d9b3f5d8)
+
+* Layergestaltung > **Einfach Markierung** in **Geometriegenerator** ändern
+* Geometrietyp: LineString/MultiLineString
+* Abfrage einfügen:
+
+```
+make_line($geometry, make_point("LonEnd", "LatEnd"))
+```
+
