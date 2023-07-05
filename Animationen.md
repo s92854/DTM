@@ -3,17 +3,12 @@
 ## 1. Daten herunterladen
 * Mit Hilfe der [Meteormap](https://tammojan.github.io/meteormap/) Meteordaten heraussuchen und die entsprechende [.kml Datei](https://github.com/s92854/DTM/files/11958878/meteors_whole_August.zip) herunterladen
 
-## 2. Daten in QGIS laden und bereinigen
+## 2. Daten in QGIS laden
 * Layer --> Layer hinzufügen --> Vektordatenlayer hinzufügen
 
 ![image](https://github.com/s92854/DTM/assets/134683810/68f33db2-aaed-434d-8034-84739ccf5c9a)
 
-* Layer exportieren und Attributtabelle öffnen
-* Alle *NULL* Spalten löschen
-
-![image](https://github.com/s92854/DTM/assets/134683810/088a4056-beb3-4e3d-8922-a6f341b31371)
-
-## 2. Darstellung
+## 3. Darstellung
 * Den Layergestaltungstab einschalten
 
 ![image](https://github.com/s92854/DTM/assets/134683810/fe471236-9a5e-4103-a6fb-73f7c786cfc5)
@@ -31,12 +26,48 @@
 * Rechtsklick auf **meteors** Layer --> Alle Stile kopieren
 * Rechtsklick auf **meteors whole August** Layer --> Alle Stile einfügen
 
-## 3. Zeitliche Animation
+## 4. Zeitliche Animation
 * Eigenschaften von **meteors whole August** --> Zeitlich --> Dynamische Zeitsteuerung
 
 ![image](https://github.com/s92854/DTM/assets/134683810/246bc012-1fd9-4c7f-b61e-897d10647fa5)
 
 * Zeitsteuerungsfenster einblenden
 
-![image](https://github.com/s92854/DTM/assets/134683810/c9cfaf3c-471c-4fa7-9048-8ee9b31efcf8)
+![image](https://github.com/s92854/DTM/assets/134683810/b39d905e-6c68-4770-b311-45f5f7d37b14)
+
+* Auf Animierte Zeitnavigation umstellen, und 1,0 Tage statt Stunden einstellen
+
+![image](https://github.com/s92854/DTM/assets/134683810/a9fbab00-eabc-4174-89ff-356a4e0252c5)
+
+* Über goldenes Zahnrad ist Bildrate (fps) einstellbar (am besten 2-4)
+
+## 5. Animation speichern
+
+![image](https://github.com/s92854/DTM/assets/134683810/4d97fb27-7c9a-4a30-b5ab-c1725e1faed5)
+
+## 6. Temporären Layer erstellen
+* Über Layer --> Layer erstellen --> Temporären Layer erstellen (hier Name: legende)
+
+![image](https://github.com/s92854/DTM/assets/134683810/e961a435-bf89-4e8f-8b9e-2b4e687f3e79)
+
+* Rechts neben dem Editierstift: Punktobjekt hinzufügen
+* Punkt bei Großbritanien hinzufügen
+
+![image](https://github.com/s92854/DTM/assets/134683810/081c7d8b-c143-4f93-9a54-827cc5ba625b)
+
+* Layergestaltung --> Beschriftungen --> Einzelne Beschriftung --> Ausducksdialog
+
+![image](https://github.com/s92854/DTM/assets/134683810/d65f2286-a62b-46da-ac64-c1b0ceae32a2)
+
+Ausdruck eingeben:
+```
+'Sternschnuppen' || '\n' || format_date(@map_start_time, 'dd MMMM yyyy')
+```
+
+## 7. Design
+* Passende Schrift, Schriftgröße, Schriftfarbe, etc. vergeben
+* Farbe des Punktes auf transparent stellen
+
+![image](https://github.com/s92854/DTM/assets/134683810/64262f10-e01f-4329-b7b8-302c4ef7ac0d)
+
 
