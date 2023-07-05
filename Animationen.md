@@ -68,6 +68,18 @@ Ausdruck eingeben:
 * Passende Schrift, Schriftgröße, Schriftfarbe, etc. vergeben
 * Farbe des Punktes auf transparent stellen
 
-![image](https://github.com/s92854/DTM/assets/134683810/64262f10-e01f-4329-b7b8-302c4ef7ac0d)
+![image](https://github.com/s92854/DTM/assets/134683810/6d243785-3e22-4e70-b26d-1aacd5190da9)
 
+## 8. Schriftanimation
+* Eigenschaften **Legende** Layer --> Zeitlich --> Dynamische Zeitsteuerung
+* Umstellen auf **Nur Layer neuzeichnen**
+* Layer als Shapedatei exportieren
 
+## 9. Urheberrechtsnachweis hinzufügbar
+* Schriftart, -farbe, etc., sowie den Urhebertext anpassen
+
+![image](https://github.com/s92854/DTM/assets/134683810/bc36c361-59f6-4b99-8596-2b9c2d4f71ca)
+
+## 10. Photoshop: Stapelskripting
+* In Photoshop: Datei --> Skripten --> Deien in Stapel laden
+* 
