@@ -4,6 +4,10 @@
 
 ## 1. Daten herunterladen
 * Mit Hilfe der [Meteormap](https://tammojan.github.io/meteormap/) Meteordaten heraussuchen und die entsprechende [.kml Datei](https://github.com/s92854/DTM/files/11958878/meteors_whole_August.zip) herunterladen
+* Zum Filtern Namen der Station eingeben. Bei bspw. nur deutschen Stationen ```DE``` eingeben
+
+![image](https://github.com/s92854/DTM/assets/134683810/d0ad27ff-6905-42d2-9a9e-65462575161a)
+
 
 ## 2. Daten in QGIS laden
 * Layer > Layer hinzufügen > Vektordatenlayer hinzufügen
